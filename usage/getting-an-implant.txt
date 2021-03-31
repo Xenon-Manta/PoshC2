@@ -10,7 +10,7 @@ Posh has several types of Implant:
 * **Sharp** - a C#.NET Implant that does not use any PowerShell related functionality at all and does not interact with any PowerShell components.
     * This Implant can run C# executables in memory, such as BloodHound and the GhostPack binaries from SpectreOps.
 * **Python** - a Python3 Implant that requires Python3 on the target in order to execute, but allows the user to run arbitrary Python3 code and load Python3 scripts.
-* **PBind** - PowerShell and Python Implants that communication using named pipes.
+* **PBind** - PowerShell and Python Implants that communicate using named pipes.
 
 Payloads for all these Implants are generated in the project `payloads` directory, and should be sensibly named with type, architecture and version (in case of PowerShell).
 Raw and Base64 encoded Shellcode files are also created for custom payload creation or in-memory injection.
@@ -32,8 +32,8 @@ The Implant Types can be summarised as:
 
 These can also have suffixes depending on the Implant sub-type:
 
-* ;D - A Daisy Implant that is achieving C2 communications by daisy-chaining traffic through another implant.
-* ;P - A Proxy Implant with hard-coded Proxy credentials.
+* ;D - A Daisy Implant that achieves C2 communications by daisy-chaining traffic through another implant.
+* ;P - A Proxy Implant that uses hard-coded Proxy credentials.
 
 Some other notes:
 
